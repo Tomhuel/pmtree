@@ -1,0 +1,39 @@
+{
+  "name": "pmtree",
+  "version": "1.0.0",
+  "description": "CLI tool to display Postman Workspaces Structures",
+  "main": "dist/index.js",
+  "scripts": {
+    "setup": "npm build && npm link",
+    "build": "rimraf dist && tsc && chmod +x ./dist/index.js",
+    "permission": "chmod +x ./dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "pmtree": "./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tomhuel/pmtree.git"
+  },
+  "keywords": [
+    "cli",
+    "postman",
+    "tree"
+  ],
+  "author": "Tomhuel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tomhuel/pmtree/issues"
+  },
+  "homepage": "https://github.com/Tomhuel/pmtree#readme",
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "archy": "^1.0.0",
+    "commander": "^14.0.0"
+  }
+}
