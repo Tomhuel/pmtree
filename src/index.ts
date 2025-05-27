@@ -25,7 +25,6 @@ async function main() {
 
             const file = await import(filePath);
             const tree = buildTree(file);
-            console.log(tree);
             console.log(archy(tree));
         });
 
